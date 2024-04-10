@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>RELATED NEWS</h1>
+            <ul class="breadcrumbs">
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Sub Banner end -->
+
+<!-- Car details page start -->
+<div class="car-details-page content-area-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-xs-12">
+                <div class="car-details-section">
+                    <!-- Heading start -->
+                    <div class="heading-car clearfix">
+                        <div class="pull-left">
+                            <h3>{{single_related.title}}</h3>
+                            <h6>
+                                <i class="flaticon-pin"></i> {{single_related.held_in}}
+                            </h6>
+                            <h8>
+                                <i class="fa fa-clock-o"></i>  {{single_related.held_on}}
+                            </h8>
+                        </div>
+                    </div>
+                    <div id="carDetailsSlider" class="carousel car-details-sliders slide mb-40">
+                        <!-- main slider carousel items -->
+                        <div class="carousel-inner">
+                            <div class="active item carousel-item" data-slide-number="0">
+                                <img src="{{single_related.event_photo.url}}" class="img-fluid" alt="slider-car">
+                            </div>
+                            {% if single_related.event_photo_1 %}
+                            <div class="item carousel-item" data-slide-number="1">
+                                <img src="{{single_related.event_photo_1.url}}" class="img-fluid" alt="slider-car">
+                            </div>
+                            {% endif %}
+                            {% if single_related.event_photo_2 %}
+                            <div class="item carousel-item" data-slide-number="2">
+                                <img src="{{single_related.event_photo_2.url}}" class="img-fluid" alt="slider-car">
+                            </div>
+                            {% endif %}
+                            {% if single_related.event_photo_3 %}
+                            <div class="item carousel-item" data-slide-number="4">
+                                <img src="{{single_related.event_photo_3.url}}" class="img-fluid" alt="slider-car">
+                            </div>
+                            {% endif %}
+                            {% if single_related.event_photo_4 %}
+                            <div class="item carousel-item" data-slide-number="5">
+                                <img src="{{single_related.event_photo_4.url}}" class="img-fluid" alt="slider-car">
+                            </div>
+                            {% endif %}
+                        </div>
+                        <!-- main slider carousel nav controls -->
+                        <div class="carousel-indicators-section clearfix">
+                            <ul class="carousel-indicators car-properties list-inline nav nav-justified">
+                                <li class="list-inline-item active">
+                                    <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#carDetailsSlider">
+                                        <img src="{{single_related.event_photo.url}}" class="img-fluid" alt="small-car" style="min-height:100px;">
+                                    </a>
+                                </li>
+                                {% if single_related.event_photo_1 %}
+                                <li class="list-inline-item">
+                                    <a id="carousel-selector-1" data-slide-to="1" data-target="#carDetailsSlider">
+                                        <img src="{{single_related.event_photo_1.url}}" class="img-fluid" alt="small-car" style="min-height:100px;">
+                                    </a>
+                                </li>
+                                {% endif %}
+                                {% if single_related.event_photo_2 %}
+                                <li class="list-inline-item">
+                                    <a id="carousel-selector-2" data-slide-to="2" data-target="#carDetailsSlider">
+                                        <img src="{{single_related.event_photo_2.url}}" class="img-fluid" alt="small-car" style="min-height:100px;">
+                                    </a>
+                                </li>
+                                {% endif %}
+                                {% if single_related.event_photo_3 %}
+                                <li class="list-inline-item">
+                                    <a id="carousel-selector-3" data-slide-to="3" data-target="#carDetailsSlider">
+                                        <img src="{{single_related.event_photo_3.url}}" class="img-fluid" alt="small-car" style="min-height:100px;">
+                                    </a>
+                                </li>
+                                {% endif %}
+                                {% if single_related.event_photo_4 %}
+                                <li class="list-inline-item">
+                                    <a id="carousel-selector-4" data-slide-to="4" data-target="#carDetailsSlider">
+                                        <img src="{{single_related.event_photo_4.url}}" class="img-fluid" alt="small-car" style="min-height:100px;">
+                                </li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tabbing box start -->
+                    <div class="tabbing tabbing-box mb-40">
+                        <div class="tab-content" id="carTabContent">
+                            <div class="tab-pane fade active show" id="one" role="tabpanel" aria-labelledby="one-tab">
+                                <div class="car-description mb-50">
+                                    <h2 class="heading-2">
+                                        Description
+                                    </h2>
+                                    <p>{{single_related.description}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- Question start -->
+            <div class="widget question">
+                <h5 class="sidebar-title">RELATED POST!</h5>
+                <div class="social-list clearfix">
+                    <ul>
+                        <li><a href="https://www.facebook.com/erick.matos.758/posts/pfbid0FfyV64GwGCkNQRQbeCAXjeA9VD35rMyU2dq42buuPgE1gCAUBFR9ji1bcamtDw8rl" target="blank" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+<!-- Properties details page end -->
+
+{% endblock %}

@@ -3,22 +3,28 @@
 {% block content %}
 
 {% load static %}
+
+<!-- New section with background -->
+<div class="background-section" style="height: 50px; background-color: #5c440c;">
+</div>
+<!-- End of new section with background -->
+
 <!-- Banner start -->
 <div class="banner" id="banner">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner banner-slider-inner text-center">
             <div class="carousel-item banner-max-height active item-bg">
-                <img class="d-block w-100 h-100" src="{% static 'img/car-1.jpg' %}" alt="banner">
-                <div class="carousel-content container banner-info-2 bi-2 text-left">
-                    <h3>Empowering Preparedness</h3>
-                    <h5>Welcome to the Integrated Geospatial Crisis Management System.</h5>
+                <img class="d-block w-100 h-100" src="{% static 'img/mdrrmo-banner.png' %}" alt="banner">
+                <div class="carousel-content container banner-info-2 bi-2 text-bottom">
+                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <p style="color: black; font-size: 180%">Welcome to the Integrated Geospatial Crisis Management System!</p>
                 </div>
             </div>
             <div class="carousel-item banner-max-height item-bg">
                 <img class="d-block w-100 h-100" src="{% static 'img/car-2.jpg' %}" alt="banner">
                 <div class="carousel-content container banner-info-2 bi-2 text-left">
                     <h3>Prioritizing Safety, Valuing Every Life</h3>
-                    <h5>Our Commitment to Responsive Action.</h5>
+                    <h5 style="color: orange;">Our Commitment to Responsive Action.</h5>
 
                 </div>
             </div>
@@ -45,8 +51,6 @@
     </div>
 </div>
 <!-- Banner end -->
-
-<!-- Search box 2 end -->
 
 <!-- Featured car start -->
 <div class="featured-car content-area-5">
@@ -116,178 +120,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="slick-slide-item">
-                    <div class="car-box-3">
-                        <div class="car-thumbnail">
-                            <a href="car-details.html" class="car-img">
-                                <div class="tag-2">Featured</div>
-                                <div class="price-box">
-                                    <span class="del"><del>$830.00</del></span>
-                                    <br>
-                                    <span>$940.00</span>
-                                </div>
-                                <img class="d-block w-100" src="img/car/car-6.jpg" alt="car">
-                            </a>
-                            <div class="carbox-overlap-wrapper">
-                                <div class="overlap-box">
-                                    <div class="overlap-btns-area">
 
-                                        <div class="car-magnify-gallery">
-                                            <a href="img/car/car-6.jpg" class="overlap-btn">
-                                                <i class="fa fa-expand"></i>
-                                                <img class="hidden" src="img/car/car-6.jpg">
-                                            </a>
-                                            <a href="img/car/car-2.jpg" class="hidden">
-                                                <img class="hidden" src="img/car/car-2.jpg">
-                                            </a>
-                                            <a href="img/car/car-3.jpg" class="hidden">
-                                                <img class="hidden" src="img/car/car-3.jpg">
-                                            </a>
-                                            <a href="img/car/car-4.jpg" class="hidden">
-                                                <img class="hidden" src="img/car/car-4.jpg">
-                                            </a>
-                                            <a href="img/car/car-1.jpg" class="hidden">
-                                                <img class="hidden" src="img/car/car-1.jpg">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <h1 class="title">
-                                <a href="car-details.html">Audi Q7 2018</a>
-                            </h1>
-                            <div class="location">
-                                <a href="car-details.html">
-                                    <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
-                                </a>
-                            </div>
-                            <ul class="facilities-list clearfix">
-                                <li>Petrol</li>
-                                <li>4,000 km</li>
-                                <li>Manual</li>
-                                <li>Sport</li>
-                                <li>white</li>
-                                <li>2020</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="slick-slide-item">
-                    <div class="car-box-3">
-                        <div class="car-thumbnail">
-                            <a href="car-details.html" class="car-img">
-                                <div class="tag-2">Featured</div>
-                                <div class="price-box">
-                                    <span class="del"><del>$820.00</del></span>
-                                    <br>
-                                    <span>$980.00</span>
-                                </div>
-                                <img class="d-block w-100" src="img/car/car-5.jpg" alt="car">
-                            </a>
-                            <div class="carbox-overlap-wrapper">
-                                <div class="overlap-box">
-                                    <div class="overlap-btns-area">
-                                        <div class="car-magnify-gallery">
-                                            <a href="img/car/car-5.jpg" class="overlap-btn" data-sub-html="<h4>Toyota Prius Specs</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
-                                                <i class="fa fa-expand"></i>
-                                                <img class="hidden" src="img/car/car-5.jpg" alt="hidden-img">
-                                            </a>
-                                            <a href="img/car/car-2.jpg" class="hidden" data-sub-html="<h4>Lexus GS Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
-                                                <img class="hidden" src="img/car/car-2.jpg" alt="hidden-img">
-                                            </a>
-                                            <a href="img/car/car-3.jpg" class="hidden" data-sub-html="<h4>2015 Porsche Cayenne</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
-                                                <img class="hidden" src="img/car/car-3.jpg" alt="hidden-img">
-                                            </a>
-                                            <a href="img/car/car-4.jpg" class="hidden" data-sub-html="<h4>Toyota Corolla</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
-                                                <img class="hidden" src="img/car/car-4.jpg" alt="hidden-img">
-                                            </a>
-                                            <a href="img/car/car-1.jpg" class="hidden" data-sub-html="<h4>Lamborghini Huracán</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
-                                                <img class="hidden" src="img/car/car-1.jpg" alt="hidden-img">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <h1 class="title">
-                                <a href="car-details.html">Toyota Prius Specs</a>
-                            </h1>
-                            <div class="location">
-                                <a href="car-details.html">
-                                    <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
-                                </a>
-                            </div>
-                            <ul class="facilities-list clearfix">
-                                <li>Petrol</li>
-                                <li>4,000 km</li>
-                                <li>Manual</li>
-                                <li>Sport</li>
-                                <li>white</li>
-                                <li>2020</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="slick-slide-item">
-                    <div class="car-box-3">
-                        <div class="car-thumbnail">
-                            <a href="car-details.html" class="car-img">
-                                <div class="tag-2">Featured</div>
-                                <div class="price-box">
-                                    <span class="del"><del>$740.00</del></span>
-                                    <br>
-                                    <span>$105.00</span>
-                                </div>
-                                <img class="d-block w-100" src="img/car/car-3.jpg" alt="car">
-                            </a>
-                            <div class="carbox-overlap-wrapper">
-                                <div class="overlap-box">
-                                    <div class="overlap-btns-area">
-                                        <div class="car-magnify-gallery">
-                                            <a href="img/car/car-3.jpg" class="overlap-btn" data-sub-html="<h4>2015 Porsche Cayenne</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
-                                                <i class="fa fa-expand"></i>
-                                                <img class="hidden" src="img/car/car-3.jpg" alt="hidden-img">
-                                            </a>
-                                            <a href="img/car/car-2.jpg" class="hidden" data-sub-html="<h4>Lexus GS Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
-                                                <img class="hidden" src="img/car/car-2.jpg" alt="hidden-img">
-                                            </a>
-                                            <a href="img/car/car-1.jpg" class="hidden" data-sub-html="<h4>Lamborghini Huracán</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
-                                                <img class="hidden" src="img/car/car-1.jpg" alt="hidden-img">
-                                            </a>
-                                            <a href="img/car/car-4.jpg" class="hidden" data-sub-html="<h4>Toyota Corolla</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
-                                                <img class="hidden" src="img/car/car-4.jpg" alt="hidden-img">
-                                            </a>
-                                            <a href="img/car/car-5.jpg" class="hidden" data-sub-html="<h4>Toyota Prius Specs</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
-                                                <img class="hidden" src="img/car/car-5.jpg" alt="hidden-img">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <h1 class="title">
-                                <a href="car-details.html">2015 Porsche Cayenne</a>
-                            </h1>
-                            <div class="location">
-                                <a href="car-details.html">
-                                    <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
-                                </a>
-                            </div>
-                            <ul class="facilities-list clearfix">
-                                <li>Petrol</li>
-                                <li>4,000 km</li>
-                                <li>Manual</li>
-                                <li>Sport</li>
-                                <li>white</li>
-                                <li>2020</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="slick-slide-item">
                     <div class="car-box-3">
                         <div class="car-thumbnail">
@@ -414,14 +248,14 @@
         </div>
     </div>
 </div>
-<!-- Featured car end -->
+<!-- Features end -->
 
 <!-- Rent car start -->
 <div class="featured-car content-area">
     <div class="container">
         <!-- Main title -->
         <div class="main-title">
-            <h1></span>RELATED <span>NEWS</h1>
+            <h1><span>RELATED </span>NEWS</h1>
             <p>Latest happenings</p>
 
         </div>
@@ -433,7 +267,7 @@
                 <div class="car-box">
 
                     <div class="car-thumbnail">
-                        <a href="car-details.html" class="car-img">
+                        <a href="{% url 'related_detail' related.id %}" class="car-img">
                             <img class="d-block w-100" src="{{related.event_photo.url}}" alt="car">
                             <div class="facilities-list clearfix">
 
@@ -475,19 +309,58 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="car-details.html"> {{related.title}}</a>
+                            <a href="{% url 'related_detail' related.id %}"> {{related.title}}</a>
                         </h1>
                         <div class="location">
-                            <a href="car-details.html">
+                            <a href="{% url 'related_detail' related.id %}">
                                 <i class="flaticon-pin"></i> {{related.held_in}}
                             </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
 
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+        <!-- Page navigation start -->
+        <div class="pagination-box p-box-2 text-center">
+            <nav aria-label="Page navigation example">
+              {% if all_relateds.has_other_pages %}
+                <ul class="pagination">
+                  {% if all_relateds.has_previous %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{all_relateds.previous_page_number}}"><i class="fa fa-angle-left"></i></a>
+                    </li>
+                    {% else %}
+                    <li class="page-item disabled">
+                        <a class="page-link"><i class="fa fa-angle-left"></i></a>
+                    </li>
+                    {% endif %}
+
+                    {% for i in all_relateds.paginator.page_range %}
+                    {% if all_relateds.number == i %}
+                    <li class="page-item"><a class="page-link active" href="#">{{i}}</a></li>
+                    {% else %}
+                    <li class="page-item"><a class="page-link" href="?page={{i}}">{{i}}</a></li>
+                    {% endif %}
+                    {% endfor %}
+
+                    {% if all_relateds.has_next %}
+                      <li class="page-item">
+                          <a class="page-link" href="?page={{all_relateds.next_page_number}}"><i class="fa fa-angle-right"></i></a>
+                      </li>
+                      {% else %}
+                      <li class="page-item disabled">
+                          <a class="page-link"><i class="fa fa-angle-right"></i></a>
+                      </li>
+                      {% endif %}
+                </ul>
+                {% endif %}
+            </nav>
+        </div>
     </div>
 </div>
 <!-- Rent car end -->
@@ -509,7 +382,7 @@
                     <div class="team-1">
                         <div class="photo">
                             <a href="#">
-                                <img src="{{ team.photo.url }}" alt="team-1" class="img-fluid"c style="min-height:150px;">
+                                <img src="{{ team.photo.url }}" alt="team-1" class="img-fluid" style="min-height:150px;">
                             </a>
                             <div class="social-list clearfix">
                                 <a href="{{team.facebook_link}}" target="blank" class="facebook-bg"><i class="fa fa-facebook"></i></a>
